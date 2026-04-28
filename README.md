@@ -29,7 +29,6 @@
 前端：Next.js 16 + React 19 + TypeScript + shadcn/ui + Tailwind CSS 4
 后端：Next.js API Routes
 数据库：Supabase PostgreSQL
-AI引擎：智谱GLM-5（流式对话）
 RAG技术：向量数据库 + 语义搜索（coze-coding-dev-sdk）
 ```
 
@@ -80,8 +79,6 @@ ZHIPU_API_KEY=你的智谱API密钥
 ZHIPU_BASE_URL=https://www.aiping.cn/api/v1
 ZHIPU_MODEL=GLM-5
 ```
-
-获取智谱API Key：https://open.bigmodel.cn/
 
 ### 访问地址
 

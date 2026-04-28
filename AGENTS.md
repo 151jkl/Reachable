@@ -27,7 +27,6 @@ AI求职能力定位器，通过对话式交互帮助大学生完成能力画像
 - **Language**: TypeScript 5
 - **UI 组件**: shadcn/ui (基于 Radix UI)
 - **Styling**: Tailwind CSS 4
-- **AI引擎**: 智谱GLM-5
 - **RAG**: coze-coding-dev-sdk（向量数据库 + 语义搜索）
 
 ## 目录结构
