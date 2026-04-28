@@ -77,7 +77,6 @@ pnpm dev:win
 # 智谱AI配置（必需）
 ZHIPU_API_KEY=你的智谱API密钥
 ZHIPU_BASE_URL=https://www.aiping.cn/api/v1
-ZHIPU_MODEL=GLM-5
 ```
 
 ### 访问地址

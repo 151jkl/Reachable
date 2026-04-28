@@ -36,11 +36,11 @@ export function LandingPage() {
             <div className="nav-subtitle">AI求职能力定位器</div>
           </div>
         </div>
-        <ul className="nav-links">
-          <li><a href="#features">核心功能</a></li>
-          <li><a href="#how">使用流程</a></li>
-          <li><a href="#start">开始定位</a></li>
-        </ul>
+
+        <div className="nav-links">
+          <a href="/forum" className="nav-link">论坛</a>
+          <a href="/resources" className="nav-link">学习资源</a>
+        </div>
       </nav>
 
       {/* Hero Section */}
@@ -72,7 +72,7 @@ export function LandingPage() {
       {/* Features */}
       <section className="features" id="features">
         <div className="section-label">Core Features</div>
-        <h2 className="section-title">三步看清你的求职坐标</h2>
+        <h2 className="section-title">五大核心能力，助你求职无忧</h2>
         <p className="section-desc">从迷茫到清晰，AI 帮你完成自我认知、岗位匹配和成长规划的完整闭环。</p>
 
         <div className="feature-grid">
@@ -96,6 +96,27 @@ export function LandingPage() {
             <div className="feature-title">成长计划</div>
             <div className="feature-desc">选定目标岗位后，AI 生成一份个性化提升路线图——学什么、做什么项目、多久能缩小差距。</div>
             <span className="feature-tag tag-orange">定制化行动路径</span>
+          </div>
+          <div className="feature-card">
+            <div className="feature-icon">💬</div>
+            <div className="feature-step">社区</div>
+            <div className="feature-title">求职论坛</div>
+            <div className="feature-desc">分享面试经历、交流求职心得，与同路人一起成长，不再孤单前行。</div>
+            <span className="feature-tag tag-blue">面试经验分享</span>
+          </div>
+          <div className="feature-card">
+            <div className="feature-icon">📚</div>
+            <div className="feature-step">资源</div>
+            <div className="feature-title">学习资源库</div>
+            <div className="feature-desc">精心整理的学习路线和优质资源，助你系统提升求职竞争力。</div>
+            <span className="feature-tag tag-purple">优质学习资料</span>
+          </div>
+          <div className="feature-card">
+            <div className="feature-icon">🤖</div>
+            <div className="feature-step">AI</div>
+            <div className="feature-title">智能对话</div>
+            <div className="feature-desc">智谱GLM-5驱动，流式输出，像真人一样自然交流，随时随地解答你的求职疑惑。</div>
+            <span className="feature-tag tag-green">大模型赋能</span>
           </div>
         </div>
       </section>
@@ -145,12 +166,12 @@ export function LandingPage() {
           <div className="stat-label">精准岗位推荐</div>
         </div>
         <div className="stat-item">
-          <div className="stat-num">3</div>
-          <div className="stat-label">色匹配分类</div>
+          <div className="stat-num">15+</div>
+          <div className="stat-label">优质学习资源</div>
         </div>
         <div className="stat-item">
-          <div className="stat-num">1份</div>
-          <div className="stat-label">个性化成长计划</div>
+          <div className="stat-num">社区</div>
+          <div className="stat-label">面试经验分享</div>
         </div>
       </div>
 
@@ -284,6 +305,24 @@ export function LandingPage() {
           display: flex;
           align-items: center;
           gap: 12px;
+        }
+        .nav-links {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          margin-left: auto;
+        }
+        .nav-link {
+          padding: 8px 16px;
+          border-radius: 8px;
+          color: var(--text-secondary);
+          font-size: 14px;
+          font-weight: 500;
+          transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+          color: var(--text-primary);
+          background: var(--card-bg);
         }
         .nav-logo {
           width: 36px;
@@ -533,7 +572,7 @@ export function LandingPage() {
         }
 
         .feature-card {
-          padding: 40px 32px;
+          padding: 32px 28px;
           border-radius: 20px;
           background: var(--card-bg);
           border: 1px solid var(--card-border);
@@ -545,8 +584,11 @@ export function LandingPage() {
           animation: card-in 0.7s ease-out forwards;
         }
         .feature-card:nth-child(1) { animation-delay: 0.1s; }
-        .feature-card:nth-child(2) { animation-delay: 0.25s; }
-        .feature-card:nth-child(3) { animation-delay: 0.4s; }
+        .feature-card:nth-child(2) { animation-delay: 0.2s; }
+        .feature-card:nth-child(3) { animation-delay: 0.3s; }
+        .feature-card:nth-child(4) { animation-delay: 0.4s; }
+        .feature-card:nth-child(5) { animation-delay: 0.5s; }
+        .feature-card:nth-child(6) { animation-delay: 0.6s; }
         @keyframes card-in {
           to { opacity: 1; transform: translateY(0); }
         }

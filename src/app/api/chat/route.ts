@@ -213,7 +213,7 @@ export async function POST(request: NextRequest) {
 
     if (!apiKey) {
       console.error('API Key 未配置！请检查 .env.local 文件');
-      return new Response(JSON.stringify({ 
+      return new Response(JSON.stringify({
         error: 'API Key 未配置',
         hint: '请在项目根目录创建 .env.local 文件，添加：ZHIPU_API_KEY=你的密钥'
       }), {
